@@ -1146,7 +1146,7 @@ var sendData = /*#__PURE__*/function () {
         switch (_context.prev = _context.next) {
           case 0:
             _context.next = 2;
-            return fetch("http://localhost:80/checkout", {
+            return fetch("https://ericjlie-hackreactor-checkout.herokuapp.com/checkout", {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'

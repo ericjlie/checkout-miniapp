@@ -1,7 +1,7 @@
 const PORT = 3000;
 
 const sendData = async (data) => {
-  await fetch(`http://localhost:80/checkout`, {
+  await fetch(`https://ericjlie-hackreactor-checkout.herokuapp.com/checkout`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
