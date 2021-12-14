@@ -11,7 +11,6 @@ app.listen(PORT, () => {
 })
 
 app.post('/', (req, res)=>{
-  req.body
 })
 
 app.use(express.static('client/dist/'))
