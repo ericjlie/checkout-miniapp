@@ -1,8 +1,9 @@
 import React from 'react';
+import sendData from '../network/sendData.js'
 
 const Confirm = (props) => {
   return (
-    <div>
+    <div className="scene_element scene_element--fadein">
       <div>
         <h3>Contact Info</h3>
         <br/>
@@ -41,7 +42,8 @@ const Confirm = (props) => {
       </div>
       <button className="button" onClick={()=>{
       props.changePage('index');
-      }}>Confirm</button>
+      sendData(props.checkoutInfo);
+      }}><a href="https://en.wikipedia.org/wiki/Emperor_Norton">Confirm</a></button>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 const router = express.Router();
 
 //parser
@@ -10,7 +10,8 @@ app.listen(PORT, () => {
   console.log(`Server listening on port: ${PORT}`);
 })
 
-app.post('/', (req, res)=>{
+app.post('/checkout', (req, res)=>{
+  console.log(req.body)
 })
 
 app.use(express.static('client/dist/'))

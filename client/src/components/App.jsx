@@ -16,7 +16,7 @@ const App = () => {
   });
 
   return (
-    <div className="main">
+    <div className="main scene_element scene_element--fadein">
       <div className='navbar'>
         <span>
           {page === 'index' && <button className='button' onClick={()=>changePage('checkoutOne')}>Checkout</button>}

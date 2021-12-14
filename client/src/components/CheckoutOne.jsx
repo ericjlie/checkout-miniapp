@@ -5,7 +5,7 @@ const CheckoutOne = (props) => {
   const inputEmail = useRef(null)
   const inputPass = useRef(null)
   return(
-    <div>
+    <div className="scene_element scene_element--fadein">
         <div>
           <label>Name: </label>
           <input type='text' defaultValue={props.checkoutInfo.name} ref={inputName}></input>

@@ -7,7 +7,7 @@ const CheckoutTwo = props => {
   const inputZip = useRef(null);
   const inputPhone = useRef(null);
   return(
-    <div>
+    <div className="scene_element scene_element--fadein">
       <div>
         <label>Address Line 1:</label>
         <input type='text'

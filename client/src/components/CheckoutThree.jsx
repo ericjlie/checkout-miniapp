@@ -7,7 +7,7 @@ const CheckoutThree = (props) => {
   const inputZip = useRef(null);
 
   return(
-    <div>
+    <div className="scene_element scene_element--fadein">
       <div>
         <label>Credit Card Number:</label>
         <input type='text'
