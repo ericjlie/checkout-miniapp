@@ -10,7 +10,7 @@ const App = () => {
   const [page, changePage] = useState('index');
   const [cart, changeCart] = useState([]);
   const [checkoutInfo, changeCheckoutInfo] = useState({
-    name: 'Eric',
+    name: '',
     address: {},
     payment: {}
   });

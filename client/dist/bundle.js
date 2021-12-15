@@ -814,7 +814,7 @@ var App = function App() {
       changeCart = _useState4[1];
 
   var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({
-    name: 'Eric',
+    name: '',
     address: {},
     payment: {}
   }),
