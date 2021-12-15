@@ -8,37 +8,38 @@ const CheckoutTwo = props => {
   const inputPhone = useRef(null);
   return(
     <div className="scene_element scene_element--fadein">
-      <div>
+      <div className="field"><h3>Address</h3></div>
+      <div className="field">
         <label>Address Line 1:</label>
         <input type='text'
         defaultValue ={props.checkoutInfo.address.lineOne}
         ref={inputLineOne}></input>
       </div>
-      <div>
+      <div className="field">
         <label>Address Line 2:</label>
         <input type='text'
         defaultValue ={props.checkoutInfo.address.lineTwo}
         ref={inputLineTwo}></input>
       </div>
-      <div>
+      <div className="field">
         <label>City:</label>
         <input type='text'
         defaultValue ={props.checkoutInfo.address.city}
         ref={inputCity}></input>
       </div>
-      <div>
+      <div className="field">
         <label>Zip Code:</label>
         <input type='text'
         defaultValue ={props.checkoutInfo.address.Zip}
         ref={inputZip}></input>
       </div>
-      <div>
+      <div className="field">
         <label>Phone:</label>
         <input type='text'
         defaultValue ={props.checkoutInfo.Phone}
         ref={inputPhone}></input>
       </div>
-      <button className='button' onClick={()=> {
+      <button className='button field' onClick={()=> {
         props.changeCheckoutInfo({
           ...props.checkoutInfo,
           address: {

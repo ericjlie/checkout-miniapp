@@ -8,35 +8,36 @@ const CheckoutThree = (props) => {
 
   return(
     <div className="scene_element scene_element--fadein">
-      <div>
+      <div className="field"><h3>Payment Info</h3></div>
+      <div className="field">
         <label>Credit Card Number:</label>
         <input type='text'
         defaultValue={props.checkoutInfo.payment.cc}
         ref={inputCC}
         ></input>
       </div>
-      <div>
+      <div className="field">
         <label>Expiration Date:</label>
         <input type='text'
         defaultValue={props.checkoutInfo.payment.expDate}
         ref={inputExpDate}
         ></input>
       </div>
-      <div>
+      <div className="field">
         <label>CVV: </label>
         <input type='text'
         defaultValue={props.checkoutInfo.payment.cvv}
         ref={inputCVV}
         ></input>
       </div>
-      <div>
+      <div className="field">
         <label>Billing Zip: </label>
         <input type='text'
         defaultValue={props.checkoutInfo.payment.zip}
         ref={inputZip}
         ></input>
       </div>
-      <button className="button" onClick={()=>{props.changeCheckoutInfo({
+      <button className="button field" onClick={()=>{props.changeCheckoutInfo({
       ...props.checkoutInfo,
       payment: {
         cc: inputCC.current.value,

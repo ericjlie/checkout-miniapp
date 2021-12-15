@@ -6,19 +6,20 @@ const CheckoutOne = (props) => {
   const inputPass = useRef(null)
   return(
     <div className="scene_element scene_element--fadein">
-        <div>
+      <div className="field"><h3>User Info</h3></div>
+        <div className="field">
           <label>Name: </label>
           <input type='text' defaultValue={props.checkoutInfo.name} ref={inputName}></input>
         </div>
-        <div>
+        <div className="field">
           <label>Email: </label>
           <input type='text' defaultValue={props.checkoutInfo.email} ref={inputEmail}></input>
         </div>
-        <div>
+        <div className="field">
           <label>Password: </label>
           <input type='text' defaultValue={props.checkoutInfo.password} ref={inputPass}></input>
         </div>
-        <button className="button" onClick={()=>{props.changeCheckoutInfo({
+        <button className="button field" onClick={()=>{props.changeCheckoutInfo({
 
           ...props.checkoutInfo,
           name: inputName.current.value,
