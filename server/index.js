@@ -5,6 +5,8 @@ const router = express.Router();
 const db = require('./db');
 var cors = require('cors');
 
+const data = [];
+
 //parser
 app.use(express.json());
 //cors
@@ -15,8 +17,13 @@ app.listen(PORT, () => {
 })
 
 app.post('/checkout', (req, res)=>{
-  console.log(req.body)
+  console.log(req.body);
+  data.push(req.body);
   res.end('Success')
+})
+
+app.get('/checkout', (req, res)=>{
+  res.send(data)
 })
 
 app.use(express.static('client/dist/'))
