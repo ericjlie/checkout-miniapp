@@ -17,8 +17,10 @@ app.listen(PORT, () => {
 })
 
 app.post('/checkout', (req, res)=>{
-  console.log(req.body);
+  const checkout = new db.Transaction(req.body);
+  console.log(checkout);
   data.push(req.body);
+  checkout.save();
   res.end('Success')
 })
 

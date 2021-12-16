@@ -39,6 +39,9 @@ const CheckoutTwo = props => {
         defaultValue ={props.checkoutInfo.Phone}
         ref={inputPhone}></input>
       </div>
+      <button className="button field" onClick={()=>{
+      props.changePage('checkoutOne');
+      }}>Back</button>
       <button className='button field' onClick={()=> {
         props.changeCheckoutInfo({
           ...props.checkoutInfo,

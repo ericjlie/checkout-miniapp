@@ -37,6 +37,9 @@ const CheckoutThree = (props) => {
         ref={inputZip}
         ></input>
       </div>
+      <button className="button field" onClick={()=>{
+      props.changePage('checkoutTwo');
+      }}>Back</button>
       <button className="button field" onClick={()=>{props.changeCheckoutInfo({
       ...props.checkoutInfo,
       payment: {

@@ -980,6 +980,11 @@ var CheckoutThree = function CheckoutThree(props) {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("button", {
     className: "button field",
     onClick: function onClick() {
+      props.changePage('checkoutTwo');
+    }
+  }, "Back"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("button", {
+    className: "button field",
+    onClick: function onClick() {
       props.changeCheckoutInfo(_objectSpread(_objectSpread({}, props.checkoutInfo), {}, {
         payment: {
           cc: inputCC.current.value,
@@ -1059,6 +1064,11 @@ var CheckoutTwo = function CheckoutTwo(props) {
     defaultValue: props.checkoutInfo.Phone,
     ref: inputPhone
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("button", {
+    className: "button field",
+    onClick: function onClick() {
+      props.changePage('checkoutOne');
+    }
+  }, "Back"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("button", {
     className: "button field",
     onClick: function onClick() {
       props.changeCheckoutInfo(_objectSpread(_objectSpread({}, props.checkoutInfo), {}, {
