@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
 
-//const server = 'mongodb+srv://ericjlie:m0ng0D3t3ster@cluster0.etn9z.mongodb.net/checkout?retryWrites=true&w=majority'
 
 async function main() {
-  await mongoose.connect('mongodb+srv://ericjlie:m0ng0D3t3ster@cluster0.etn9z.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+  await mongoose.connect();
 }
 
 main()
